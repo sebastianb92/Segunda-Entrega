@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas Especialidades</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="../img/logo.png" alt="" width=200px>
+    </header>
+    <h1>Consulta de Citas Medicas</h1>
+    <div class="container-form">
+        <form method="post" action="/consulta-cita">
+            <label for="especialidad">Especialidad</label>
+            <select id="especialidad" name="especialidad" required>
+                <option hidden selected> - Selecciona una opción - </option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Medicina interna">Medicina interna</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Rehabilitación física">Rehabilitación física</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option>
+            </select>
+            <input type="submit" value="Consultar">
+        </form>
+        <a href="../index.html"><input type="button" value="Volver"></a>
+    </div>
+    <footer>
+        <h3>CONTACTO</h3>
+        <p>Johan Sebastian Bonilla Sanchez <br> centromedico@hotmail.com <br> PBX 3113113111</p>
+    </footer>
+</body>
+
+</html>

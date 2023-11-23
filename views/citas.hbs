@@ -1,0 +1,34 @@
+<header>
+    <img src="/segundoProyecto/public/images/logo.png" alt="" width=200px>
+</header>
+<h2>Citas Agendadas</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Fecha Cita</th>
+            <th>Paciente </th>
+            <th>Telefono</th>
+            <th>Especialidad</th>
+            <th>Consultorio</th>
+            <th>Medico</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each resultado}}
+        <tr>
+            <td>{{formatoFecha fecha_cita}}</td>
+            <td>{{paciente}}</td>
+            <td>{{telefono}}</td>
+            <td>{{especialidad}}</td>
+            <td>{{consultorio}}</td>
+            <td>{{medico}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<br><br>
+<a href="../index.html"><input type="button" value="Volver"></a>
+<footer>
+    <h3>CONTACTO</h3>
+    <p>Johan Sebastian Bonilla Sanchez <br> centromedico@hotmail.com <br> PBX 3113113111</p>
+</footer>

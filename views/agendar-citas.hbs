@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Pacientes</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo.png" alt="" width=200px>
+    </header>
+
+    <h1>Agendamiento de Citas</h1>
+    <div class="container-form">
+        <form method="post" action="/agregar-cita">
+            <label for="cedula">Número de Cédula</label>
+            <input type="number" id="cedula" name="cedula" required>
+            <label for="fecha_cita">Fecha de Cita Medica</label>
+            <input type="date" id="fecha_cita" name="fecha_cita" required>
+            <label for="medico">Especialista:</label>
+            <select id="medico" name="medico" required>
+                <option hidden selected> - Selecciona una opción - </option>
+                {{#each resultado}}
+                <option value="{{cedula}}">{{nombres}} {{apellidos}}</option>
+                {{/each}}
+                {{!-- <option value="Cardiología">Cardiología</option>
+                <option value="Medicina interna">Medicina interna</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Rehabilitación física">Rehabilitación física</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option> --}}
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+        <a href="../index.html"><input type="button" value="Volver"></a>
+    </div>
+    <footer>
+        <h3>CONTACTO</h3>
+        <p>Johan Sebastian Bonilla Sanchez <br> centromedico@hotmail.com <br> PBX 3113113111</p>
+    </footer>

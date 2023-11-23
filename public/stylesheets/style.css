@@ -1,0 +1,165 @@
+.body-index {
+  font-family: Arial, sans-serif;
+  /* background-color: #f5f5f5; */
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.footer-index {
+  background-color: #1465bb;
+  color: #fff;
+  position:absolute;
+  width: 100%;
+  bottom: 0;
+}
+header {
+  background-color: #1465bb;
+  color: #fff;
+  position: static;
+  padding: 20px;
+  top: 0;
+}
+
+footer {
+  background-color: #1465bb;
+  color: #fff;
+  position: static;
+  width: 100%;
+  bottom: 0;
+}
+
+.logo{
+  text-align: left;
+}
+.title{
+  text-align: center;
+  color: #171a4a;
+  font-size: 60px;
+  font-family:Arial, Helvetica, sans-serif;
+} 
+
+.description{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+} 
+h1{
+  text-align: center;
+}
+li{
+  list-style: none;
+  text-align: center;
+}
+
+.listado-servicios{
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.container-form{
+  max-width: 50%;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="button"] {
+  background-color: #003785;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 20px;
+  width: 15%;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color:  #1465bb;
+}
+
+
+.option {
+  background-color: #003785;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 20px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease;
+
+}
+.option:hover {
+  background-color:  #1465bb;
+}
+
+/* tablas */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #00003c;
+
+}
+
+td {
+  color: black;
+}
+
+th {
+  background-color: #c2d2e9;
+  font-weight: bold;
+}
+
+td {
+  background-color: #f2f2f2;
+
+}

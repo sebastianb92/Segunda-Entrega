@@ -1,0 +1,32 @@
+<header>
+    <img src="/segundoProyecto/public/images/logo.png" alt="" width=200px>
+</header>
+<h2>Listado Pacientes</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos </th>
+            <th>Número de Cédula</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Telefono</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each resultado}}
+        <tr>
+            <td>{{nombres}}</td>
+            <td>{{apellidos}}</td>
+            <td>{{cedula}}</td>
+            <td>{{formatoFecha fecha_nacimiento}}</td>
+            <td>{{telefono}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<br><br>
+<a href="../index.html"><input type="button" value="Volver"></a>
+<footer>
+    <h3>CONTACTO</h3>
+    <p>Johan Sebastian Bonilla Sanchez <br> centromedico@hotmail.com <br> PBX 3113113111</p>
+</footer>
